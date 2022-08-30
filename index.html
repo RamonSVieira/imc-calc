@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style/style.css">
+
+  <title>IMCALC</title>
+</head>
+
+<body>
+  <main>
+
+    <div class="container">
+      <div class="text-container">
+        <h1>Calcule seu Índice de Massa Corporal</h1>
+        <p>O Índice de Massa Corporal (imc) é uma medida internacional utilizada para calcular se determinado indivíduo está ou não no peso ideal. Então vamos calcular o seu?</p>
+      </div>
+
+      <div class="container-form-img">
+        <form action="">
+
+          <div class="group-options">
+            <div>
+              <input type="radio" name="sex" value="man" id="man">
+              <label for="man">Man</label>
+            </div>
+
+            <div>
+              <input type="radio" name="sex" value="woman" id="woman">
+              <label for="woman">Woman</label>
+            </div>
+          </div>
+
+          <input type="number" name="height" id="height" placeholder="1.65">
+          <input type="number" name="weight" id="weight" placeholder="65">
+          <input type="button" value="Calcular" id="btn">
+        </form>
+
+        <div class="content-calc">
+          <h2>26 kg/m2</h2>
+          <p>Voce está com o peso ideal</p>
+          <img src="./images/lizza-acima.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>

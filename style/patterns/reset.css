@@ -1,0 +1,17 @@
+html,
+body,
+h1,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 70%;
+  margin: auto;
+}

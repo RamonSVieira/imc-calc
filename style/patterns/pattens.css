@@ -1,0 +1,130 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 16px;
+
+  background-color: aqua;
+}
+
+.text-container {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.text-container h1 {
+  margin-bottom: 24px;
+
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.text-container p {
+  max-width: 700px;
+  margin: auto;
+
+  font-size: 22px;
+}
+
+.container-form-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 36px;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container-form-img img {
+  flex: 1;
+}
+
+.group-options {
+  display: flex;
+  gap: 16px;
+}
+
+.group-options div {
+  flex: 1;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+form label {
+  padding: 16px;
+  border-radius: 8px;
+
+  display: block;
+
+  cursor: pointer;
+
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+input:checked + label {
+  background-color: #ffd51d;
+}
+
+form label,
+form input:not(form input[type="button"]) {
+  background-color: #fff;
+}
+
+form input:not(form input[type="button"]):focus {
+  box-shadow: 0 0 0 2px #fea;
+}
+
+form input {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: none;
+
+  outline: none;
+
+  font-size: 1.2rem;
+}
+
+form input[type="button"] {
+  cursor: pointer;
+}
+
+.content-calc {
+  text-align: center;
+}
+
+.content-calc h2 {
+  font-size: 2rem;
+}
+
+.content-calc p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .container-form-img {
+    grid-template-columns: 1fr;
+  }
+}
