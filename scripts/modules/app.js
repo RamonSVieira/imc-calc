@@ -5,6 +5,12 @@ const height = document.getElementById("height");
 const weight = document.getElementById("weight");
 const button = document.getElementById("btn");
 
+const txtImc = document.getElementById("txtImc");
+const txtInfoImc = document.getElementById("txtInfoImc");
+const imageImc = document.getElementById("imageImc");
+
+console.log(txtImc, txtInfoImc, imageImc);
+
 button.addEventListener("click", calculate);
 
 function calculate() {
@@ -18,27 +24,38 @@ function calculate() {
     }
   }
 
+  txtImc.innerText = `${imc.toFixed(1)} kg/m²`;
+
   console.log(imc);
 
   if (valueGenero[0] === "man") {
-    console.log(valueGenero[0]);
     if (imc < 17.3) {
       console.log("MAGREZA");
+      txtInfoImc.innerText = "MAGO PRA KARA***";
+      imageImc.src = "./images/slim-man.png";
     } else if (imc > 17.3 && imc < 25.5) {
       console.log("NORMAL");
+      txtInfoImc.innerText = "POR** TU TREINA É BOE?";
+      imageImc.src = "./images/fit-man.png";
     } else if (imc > 25.5) {
       console.log("SOBREPESO");
+      txtInfoImc.innerText =
+        "TA ME OLHANDO PORQUE? TA PENSANDO QUE EU SOU UM SACO DE DORITOS É GORDOLA?";
+      imageImc.src = "./images/fat-man.png";
     }
   } else {
-    console.log(valueGenero[0]);
     if (imc < 18.5) {
       console.log("MAGREZA");
+      txtInfoImc.innerText = "SÓ O PALITO";
+      imageImc.src = "./images/thin-woman.png";
     } else if (imc > 18.5 && imc < 24.9) {
       console.log("NORMAL");
+      txtInfoImc.innerText = "ESSA É RATA DE ACADEMIA";
+      imageImc.src = "./images/fit-woman.png";
     } else if (imc > 24.9) {
       console.log("SOBREPESO");
+      txtInfoImc.innerText = "KRAI, TA MAIS GORDA QUE A MÃE DE JADSON";
+      imageImc.src = "./images/fat-woman.png";
     }
   }
-
-  console.log(valueGenero);
 }
