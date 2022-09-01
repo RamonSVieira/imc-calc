@@ -19,38 +19,40 @@
   <main>
 
     <div class="container">
-      <div class="text-container">
-        <h1>Calcule seu Índice de Massa Corporal</h1>
-        <p>O Índice de Massa Corporal (imc) é uma medida internacional utilizada para calcular se determinado indivíduo está ou não no peso ideal. Então vamos calcular o seu?</p>
-      </div>
-
-      <div class="container-form-img">
-        <form action="">
-
-          <div class="group-options">
-            <div>
-              <input type="radio" name="genero" value="man" id="man">
-              <label for="man">Man</label>
-            </div>
-
-            <div>
-              <input type="radio" name="genero" value="woman" id="woman">
-              <label for="woman">Woman</label>
-            </div>
-          </div>
-
-          <input type="number" name="height" id="height" placeholder="1.65">
-          <input type="number" name="weight" id="weight" placeholder="65">
-          <input type="button" value="Calcular" id="btn">
-        </form>
-
-        <div class="content-calc">
-          <h2 id="txtImc">00 kg/m2</h2>
-          <p id="txtInfoImc">Preencha os campos ao lado para calcular seu IMC.</p>
-          <img id="imageImc" src="./images/fat-woman.png" alt="">
+      <div class="container-box">
+        <div class="text-container">
+          <h1 class="font-1x">Calcule seu Índice de Massa Corporal</h1>
+          <p class="font-1m">O Índice de Massa Corporal (imc) é uma medida internacional utilizada para calcular se determinado indivíduo está ou não no peso ideal. Então vamos calcular o seu?</p>
         </div>
-      </div>
 
+        <div class="container-form-img">
+          <form action="">
+
+            <div class="group-options">
+              <div>
+                <input type="radio" name="genero" value="man" id="man">
+                <label for="man">Man</label>
+              </div>
+
+              <div>
+                <input type="radio" name="genero" value="woman" id="woman">
+                <label for="woman">Woman</label>
+              </div>
+            </div>
+
+            <input type="number" name="height" id="height" placeholder="1.65">
+            <input type="number" name="weight" id="weight" placeholder="65">
+            <input type="button" value="Calcular" id="btn">
+          </form>
+
+          <div class="content-calc">
+            <h2 id="txtImc" class="font-1g">00 kg/m2</h2>
+            <p id="txtInfoImc" class="font-1m">Preencha os campos ao lado para calcular seu IMC.</p>
+            <img id="imageImc" src="./images/img-pattern.png" alt="">
+          </div>
+        </div>
+
+      </div>
     </div>
   </main>
 

@@ -3,22 +3,30 @@ body {
 }
 
 main {
-  min-height: 100vh;
+  height: 100vh;
 
-  padding: 20px;
+  padding: 60px;
 
   display: flex;
   align-items: center;
 }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
+  min-height: 100%;
 
-  margin: 40px auto;
+  margin: auto;
   padding: 40px;
   border-radius: 16px;
 
+  display: flex;
+
   background-color: aqua;
+}
+
+.container-box {
+  max-width: 900px;
+  margin: auto;
 }
 
 .text-container {
@@ -29,16 +37,11 @@ main {
 
 .text-container h1 {
   margin-bottom: 24px;
-
-  font-size: 42px;
-  font-weight: 700;
 }
 
 .text-container p {
-  max-width: 700px;
+  max-width: 900px;
   margin: auto;
-
-  font-size: 22px;
 }
 
 .container-form-img {
@@ -53,6 +56,8 @@ form {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  font-size: 16px;
 }
 
 .container-form-img img {
@@ -98,6 +103,8 @@ form input:not(form input[type="button"]):focus {
 }
 
 form input {
+  width: 100%;
+
   padding: 16px 24px;
   border-radius: 8px;
   border: none;
@@ -115,16 +122,21 @@ form input[type="button"] {
   text-align: center;
 }
 
-.content-calc h2 {
-  font-size: 2rem;
-}
-
-.content-calc p {
-  font-size: 1.5rem;
-}
-
 @media (max-width: 800px) {
   .container-form-img {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  form label,
+  form input {
+    font-size: 0.95rem;
   }
 }
