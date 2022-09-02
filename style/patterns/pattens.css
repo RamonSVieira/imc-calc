@@ -122,6 +122,29 @@ form input[type="button"] {
   text-align: center;
 }
 
+.pop-up {
+  max-width: 200px;
+  padding: 10px;
+  margin: 60px;
+
+  border-radius: 16px;
+  background-color: #ffd51d;
+  box-shadow: 0 0 3px #000;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  transform: translateX(150%);
+  transition: transform 0.5s;
+
+  text-align: center;
+}
+
+.pop-up.sucess {
+  transform: translateX(0%);
+}
+
 @media (max-width: 800px) {
   .container-form-img {
     grid-template-columns: 1fr;
@@ -131,6 +154,10 @@ form input[type="button"] {
 @media (max-width: 700px) {
   main {
     padding: 20px;
+  }
+
+  .pop-up {
+    margin: 20px;
   }
 }
 
